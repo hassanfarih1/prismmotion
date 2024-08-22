@@ -79,7 +79,7 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         className="text-5xl font-bold mb-8 text-center"
       >
-        Let's Work Together!
+        Let&apos;s Work Together!
       </motion.h1>
 
       {/* Container for Contact Card and Animations */}
