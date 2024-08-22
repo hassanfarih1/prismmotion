@@ -1,7 +1,10 @@
 import { Inter } from "next/font/google";
+import Maison_Neue_Mono from "next/font/local";
 import "./globals.css";
+import '@/app/style/style.css'
 
 const inter = Inter({ subsets: ["latin"] });
+const maisonmono = Maison_Neue_Mono({ src: './maison/Maison_Neue_Bold.ttf' });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${maisonmono.className} bg-custom-bg dotted-background`}>
+        {children}
+      </body>
     </html>
   );
 }
